@@ -232,6 +232,8 @@
           <div class="is-size-5 publication-authors">
             <span class="author-block">Anonymous ACL submission</span>
           </div>
+          <p style="margin-top: 1rem; font-size: 18px;">Your responses are valuable and will contribute to our research. Thank you for your participation.</p>
+          <p style="font-size: 16px;">This form consists of two parts. We appreciate your time!</p>
         </div>
       </div>
     </div>
@@ -244,16 +246,103 @@
       <div class="container is-max-desktop" style="margin-top:30px;">
         <div class="section-title has-text-left">
           <h2 class="title is-3">Part 1. Audio Matching Task</h2>
+          <p style="font-size: 18px;">Judge which audio better (or equally) matches the textual description.</p>
         </div>
 
         <div class="content has-text-left" style="font-size: 18px;">
-          <p>Listen to the following pairs of audio and match them to the given text in the Google Form.</p>
-        </div>
-
-        <!-- Repeat this block from 1 to 20 -->
-        <div class="content has-text-left" style="margin-top: 30px;">
           <ol>
-            <!-- JavaScript will generate 20 questions here -->
+            <!-- Items 1 through 10 already included -->
+            <!-- Items 11 to 20 below -->
+            <li>
+              <p><strong>11. A brass instrument.</strong></p>
+              <audio controls controlslist="nodownload">
+                <source src="static/audio/item_11_1.wav" type="audio/wav">
+              </audio>
+              <audio controls controlslist="nodownload">
+                <source src="static/audio/item_11_2.wav" type="audio/wav">
+              </audio>
+            </li>
+            <li>
+              <p><strong>12. The sound of crickets can be heard during a summer evening in the Carolinas.</strong></p>
+              <audio controls controlslist="nodownload">
+                <source src="static/audio/item_12_1.wav" type="audio/wav">
+              </audio>
+              <audio controls controlslist="nodownload">
+                <source src="static/audio/item_12_2.wav" type="audio/wav">
+              </audio>
+            </li>
+            <li>
+              <p><strong>13. Panting is the sound a dog makes after playing outside.</strong></p>
+              <audio controls controlslist="nodownload">
+                <source src="static/audio/item_13_1.wav" type="audio/wav">
+              </audio>
+              <audio controls controlslist="nodownload">
+                <source src="static/audio/item_13_2.wav" type="audio/wav">
+              </audio>
+            </li>
+            <li>
+              <p><strong>14. The sound of cicadas can be heard during a hot summer day.</strong></p>
+              <audio controls controlslist="nodownload">
+                <source src="static/audio/item_14_1.wav" type="audio/wav">
+              </audio>
+              <audio controls controlslist="nodownload">
+                <source src="static/audio/item_14_2.wav" type="audio/wav">
+              </audio>
+            </li>
+            <li>
+              <p><strong>15. At dusk, in a rural location, insects can be heard chirping.</strong></p>
+              <audio controls controlslist="nodownload">
+                <source src="static/audio/item_15_1.wav" type="audio/wav">
+              </audio>
+              <audio controls controlslist="nodownload">
+                <source src="static/audio/item_15_2.wav" type="audio/wav">
+              </audio>
+            </li>
+            <li>
+              <p><strong>16. The sound of a bird singing is often heard in the rainforest.</strong></p>
+              <audio controls controlslist="nodownload">
+                <source src="static/audio/item_16_1.wav" type="audio/wav">
+              </audio>
+              <audio controls controlslist="nodownload">
+                <source src="static/audio/item_16_2.wav" type="audio/wav">
+              </audio>
+            </li>
+            <li>
+              <p><strong>17. Peeping is the sound a bird makes.</strong></p>
+              <audio controls controlslist="nodownload">
+                <source src="static/audio/item_17_1.wav" type="audio/wav">
+              </audio>
+              <audio controls controlslist="nodownload">
+                <source src="static/audio/item_17_2.wav" type="audio/wav">
+              </audio>
+            </li>
+            <li>
+              <p><strong>18. The sound of a bell ringing through a valley.</strong></p>
+              <audio controls controlslist="nodownload">
+                <source src="static/audio/item_18_1.wav" type="audio/wav">
+              </audio>
+              <audio controls controlslist="nodownload">
+                <source src="static/audio/item_18_2.wav" type="audio/wav">
+              </audio>
+            </li>
+            <li>
+              <p><strong>19. The sound of cicadas can be heard chirping in a park.</strong></p>
+              <audio controls controlslist="nodownload">
+                <source src="static/audio/item_19_1.wav" type="audio/wav">
+              </audio>
+              <audio controls controlslist="nodownload">
+                <source src="static/audio/item_19_2.wav" type="audio/wav">
+              </audio>
+            </li>
+            <li>
+              <p><strong>20. Meow is the sound a cat makes when asking for food.</strong></p>
+              <audio controls controlslist="nodownload">
+                <source src="static/audio/item_20_1.wav" type="audio/wav">
+              </audio>
+              <audio controls controlslist="nodownload">
+                <source src="static/audio/item_20_2.wav" type="audio/wav">
+              </audio>
+            </li>
           </ol>
         </div>
       </div>
@@ -261,28 +350,6 @@
   </div>
 </section>
 
-<script>
-  const container = document.querySelector('ol');
-  for (let i = 1; i <= 20; i++) {
-    const li = document.createElement('li');
-    li.innerHTML = `
-      <div style="margin-bottom: 10px;"><strong>Item ${i}</strong></div>
-      <div class="audio-container2">
-        <audio controls controlslist="nodownload">
-          <source src="static/audio/item_${i}_1.wav" type="audio/wav">
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-      <div class="audio-container2">
-        <audio controls controlslist="nodownload">
-          <source src="static/audio/item_${i}_2.wav" type="audio/wav">
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-    `;
-    container.appendChild(li);
-  }
-</script>
 
 
 
